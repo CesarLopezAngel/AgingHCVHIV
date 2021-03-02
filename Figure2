@@ -1,0 +1,61 @@
+#Figure2
+library(RColorBrewer)
+library(gplots)
+
+rawSignalingData <- read.csv('HCVUnstimSignalingRawData.csv', header = TRUE, row.names = 1)
+minusMid <- rawSignalingData[c(1:25,40:length(rawSignalingData[,1])),]
+scaledMinusMid <- apply(minusMid, MARGIN = 2, FUN = function(X) (X - min(X))/diff(range(X)))
+heatmap_matrix=data.matrix(scaledMinusMid)
+
+heatmap.2 (heatmap_matrix,
+           
+           # dendrogram control
+           Rowv = TRUE,
+           Colv= TRUE,
+           distfun = dist,
+           hclustfun = hclust,
+           dendrogram = c("both"),
+           
+           # colors
+           col=brewer.pal(9, "YlOrBr"),
+           
+           # level trace
+           trace=c("none"),
+           
+           # Row/Column Labeling
+           margins = c(10, 10),
+           RowSideColors = c(rep("navy", 11), rep("darkred", 14), rep("gold", 14)),
+           ColSideColors = c(rep("olivedrab3", 7), rep("dodgerblue2", 7), rep("olivedrab3", 7), rep("dodgerblue2", 7), rep("gray28", 7), rep("dodgerblue2", 7), rep("plum", 7), rep("gray28", 7), rep("gray28", 7), rep("olivedrab3", 7), rep("plum", 7), rep("dodgerblue2", 7)),
+           
+           # color key + density info
+           key = TRUE,
+           keysize = 1.5,
+           density.info=c("none"),
+           
+           # plot labels
+           main = "Global Immune Signaling",
+           xlab = NULL,
+           ylab = NULL
+)
+
+par(lend = 1)           # square line ends for the color legend
+legend(0,0.93,         # x,y location of the legend on the heatmap plot
+       legend = c("HCV-", "Pre", "Post"), # category labels
+       col = c("navy", "darkred", "gold"),  # color key
+       lty= 1,             # line style
+       lwd = 10,           # line width
+       bty = "n",          # box around legend, omit if box wanted
+       horiz = TRUE,       # horizontal layout
+       cex = 0.5           # text scaling relative to par(lend) above
+)
+
+par(lend = 1)           # square line ends for the color legend
+legend(0,0.88,         # x,y location of the legend on the heatmap plot
+       legend = c("P/S/D", "PS/AV", "MAPK", "STATs"), # category labels
+       col = c("olivedrab3", "plum", "gray28", "dodgerblue2"),  # color key
+       lty= 1,             # line style
+       lwd = 10,           # line width
+       bty = "n",          # box around legend, omit if box wanted
+       horiz = TRUE,       # horizontal layout
+       cex = 0.4           # text scaling relative to par(lend) above
+)
