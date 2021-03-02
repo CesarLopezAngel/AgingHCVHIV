@@ -1,8 +1,8 @@
 #Load CorMatrix data
 setwd("~/Desktop/CorMatrices/")
-preData <- read.table(file="PreCorMatrix(1).csv", header = T, sep = ",", row.names = 1)
-midData <- read.table(file="MidCorMatrix(1).csv", header = T, sep = ",", row.names = 1)
-postData <- read.table(file="PostCorMatrix(1).csv", header = T, sep = ",", row.names = 1)
+preData <- read.table(file="PreCorMatrix.csv", header = T, sep = ",", row.names = 1)
+midData <- read.table(file="MidCorMatrix.csv", header = T, sep = ",", row.names = 1)
+postData <- read.table(file="PostCorMatrix.csv", header = T, sep = ",", row.names = 1)
 
 #Define number of parameters
 nPre <- length(preData[1,])
