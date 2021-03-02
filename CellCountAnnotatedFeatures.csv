@@ -1,0 +1,14 @@
+Feature,Function,Cohort,Data Type,Magnitude,QV,QVPercent,FDR
+CD8T.TEM,T Cell Memory Inflation,Aging,Cell Count,0.249,0.077,7.7,10
+CD4T.EM,T Cell Memory Inflation,HIV,Cell Count,0.3352,0.197818182,19.7818182,15
+CD8T.EM,T Cell Memory Inflation,Aging,Cell Count,0.227,0.071,7.1,5
+CD8T.EM,T Cell Memory Inflation,HIV,Cell Count,0.238,0.184888889,18.4888889,15
+CD4T.CM,T Cell Memory Inflation,Aging,Cell Count,0.396,0.008,0.8,0
+CD8T.CM,T Cell Memory Inflation,Aging,Cell Count,0.41,0.012,1.2,5
+CD4T.Naive,T Cell Memory Inflation,HIV,Cell Count,-0.493109677,0.186181818,18.6181818,15
+CD4T.Naive,T Cell Memory Inflation,HCV,Cell Count,-0.554219353,0.023790323,2.379032258,0
+CD4T.Naive,T Cell Memory Inflation,Aging,Cell Count,-0.432,0.008,0.8,0
+CD8T.Naive,T Cell Memory Inflation,HIV,Cell Count,-0.509369892,0.109714286,10.9714286,10
+CD8T.Naive,T Cell Memory Inflation,Aging,Cell Count,-0.603,0.008,0.8,0
+CD4na_memRatio,T Cell Memory Inflation,HIV,Cell Count,-0.308038698,0.1024,10.24,10
+CD8na_memRatio,T Cell Memory Inflation,HIV,Cell Count,-0.569841304,0.064,6.4,5

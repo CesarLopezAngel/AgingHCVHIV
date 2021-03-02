@@ -1,0 +1,20 @@
+Feature,Function,Cohort,Data Type,Magnitude,QV,QVPercent,FDR
+CD8T.IFNa.pSTAT1,Diminished Sensitivity to IFNa in CD8 T Cells,Aging,Cytokine Sensitivity,-0.508,0.008,0.8,0
+CD8T.IFNa.pSTAT5,Diminished Sensitivity to IFNa in CD8 T Cells,Aging,Cytokine Sensitivity,-0.452,0.008,0.8,0
+CD8T.IFNa.pSTAT3,Diminished Sensitivity to IFNa in CD8 T Cells,Aging,Cytokine Sensitivity,-0.207,0.15,15,15
+CD4T.IFNa.pSTAT5,Diminished Sensitivity to IFNa in CD4 T Cells,Aging,Cytokine Sensitivity,-0.246,0.063,6.3,5
+CD4T.IFNa.pSTAT1,Diminished Sensitivity to IFNa in CD4 T Cells,Aging,Cytokine Sensitivity,-0.207,0.164,16.4,15
+BCells.IFNa.pSTAT3,Diminished Sensitivity to IFNa in B Cells,Aging,Cytokine Sensitivity,-0.301,0.012,1.2,0
+CD8T.IFNa.pP38,Diminished Sensitivity to IFNa in CD8 T Cells,HCV,Cytokine Sensitivity,-0.692440649,0.008428571,0.842857143,0
+CD8T.IFNa.pErk1_2,Diminished Sensitivity to IFNa in CD8 T Cells,HCV,Cytokine Sensitivity,-0.481453155,0.011568627,1.156862745,0
+CD8T.IFNa.pAkt,Diminished Sensitivity to IFNa in CD8 T Cells,HCV,Cytokine Sensitivity,-0.484876545,0.072956989,7.295698925,5
+CD4T.IFNa.pP38,Diminished Sensitivity to IFNa in CD4 T Cells,HCV,Cytokine Sensitivity,-0.742611915,0.008428571,0.842857143,0
+CD4T.IFNa.pErk1_2,Diminished Sensitivity to IFNa in CD4 T Cells,HCV,Cytokine Sensitivity,-0.454951531,0.019344262,1.93442623,0
+BCells.IFNa.pP38,Diminished Sensitivity to IFNa in B Cells,HCV,Cytokine Sensitivity,-0.779907136,0.008428571,0.842857143,0
+BCells.IFNa.pErk1_2,Diminished Sensitivity to IFNa in B Cells,HCV,Cytokine Sensitivity,-0.477568794,0.015258621,1.525862069,0
+BCells.IFNa.pAkt,Diminished Sensitivity to IFNa in B Cells,HCV,Cytokine Sensitivity,-0.579386914,0.027230769,2.723076923,0
+BCells.IFNa.pSTAT4,Diminished Sensitivity to IFNa in B Cells,HCV,Cytokine Sensitivity,-0.54820942,0.057560976,5.756097561,5
+CD8T.IFNa.pSTAT3,Diminished Sensitivity to IFNa in CD8 T Cells,HIV,Cytokine Sensitivity,-0.551168683,0.1792,17.92,15
+CD4T.IFNa.pSTAT1,Diminished Sensitivity to IFNa in CD4 T Cells,HIV,Cytokine Sensitivity,-0.516811268,0.19,19,15
+CD4T.IFNa.pSTAT5,Diminished Sensitivity to IFNa in CD4 T Cells,HIV,Cytokine Sensitivity,-0.404912839,0.19,19,15
+BCells.IFNa.pSTAT3,Diminished Sensitivity to IFNa in B Cells,HIV,Cytokine Sensitivity,-0.412547891,0.19,19,15

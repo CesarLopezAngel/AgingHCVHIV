@@ -1,0 +1,13 @@
+Feature,Function,Cohort,Data Type,Magnitude,QV,QVPercent,FDR
+CD8T.Baseline.pSTAT1,Elevated Baseline STAT1 Signaling in CD8 T Cells,Aging,Baseline Signaling,0.572,0.008,0.8,0
+CD4T.Baseline.pSTAT1,Elevated Baseline STAT1 Signaling in CD4 T Cells,Aging,Baseline Signaling,0.327,0.016,1.6,0
+CD4T.Baseline.pSTAT5,Elevated Baseline STAT5 Signaling in CD4 T Cells,Aging,Baseline Signaling,0.25,0.068,6.8,5
+BCells.Baseline.pSTAT3,Elevated Baseline STAT3 Signaling in B Cells,Aging,Baseline Signaling,0.239,0.077,7.7,10
+CD8T.Baseline.pSTAT1,Elevated Baseline STAT1 Signaling in CD8 T Cells,HCV,Baseline Signaling,0.651650735,0.008428571,0.842857143,0
+CD4T.Baseline.pSTAT1,Elevated Baseline STAT1 Signaling in CD4 T Cells,HCV,Baseline Signaling,0.734508818,0.008428571,0.842857143,0
+CD4T.Baseline.pSTAT5,Elevated Baseline STAT5 Signaling in CD4 T Cells,HCV,Baseline Signaling,0.745343475,0.008428571,0.842857143,0
+BCells.Baseline.pSTAT3,Elevated Baseline STAT3 Signaling in B Cells,HCV,Baseline Signaling,0.417626286,0.182743363,18.27433628,15
+CD8T.Baseline.pSTAT1,Elevated Baseline STAT1 Signaling in CD8 T Cells,HIV,Baseline Signaling,0.513366389,0.109714286,10.9714286,10
+CD4T.Baseline.pSTAT1,Elevated Baseline STAT1 Signaling in CD4 T Cells,HIV,Baseline Signaling,0.455432009,0.197818182,19.7818182,15
+CD4T.Baseline.pSTAT5,Elevated Baseline STAT5 Signaling in CD4 T Cells,HIV,Baseline Signaling,0.484476329,0.188631579,18.8631579,15
+BCells.Baseline.pSTAT3,Elevated Baseline STAT3 Signaling in B Cells,HIV,Baseline Signaling,0.410708822,0.187733333,18.7733333,15
