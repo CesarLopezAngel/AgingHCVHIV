@@ -1,9 +1,9 @@
 #FigureS2A
-compositeStatTable <- read.csv('CompositeQVTable.csv', header = TRUE, row.names = 1)
-plot(sort(compositeStatTable[,4]*100), type = "n", xlab = "# Features Called Significant", ylab = "FDR")
-lines(sort(compositeStatTable[,4]*100), col = 3, lwd = 3)
+compositeStatTable <- read.csv('CompositeQValTable.csv', header = TRUE, row.names = 1)
+plot(sort(compositeStatTable[,3]*100), type = "n", xlab = "# Features Called Significant", ylab = "FDR")
+lines(sort(compositeStatTable[,3]*100), col = 3, lwd = 3)
 abline(h=20,col=1,lty=2)
-lines(sort(compositeStatTable[,3]*100), col = 4, lwd = 3)
+lines(sort(compositeStatTable[,2]*100), col = 4, lwd = 3)
 lines(sort(compositeStatTable[,1]*100), col = 2, lwd = 3)
 title("Feature Selection")
 legend("bottomright", title = "Cohort", c("HIV (N=69)\nFeatures = 128", "Aging (N=89)\nFeatures = 166", "HCV (N=25)\nFeatures = 357"), fill = c(4, 2, 3), horiz = TRUE, cex = 0.65)
