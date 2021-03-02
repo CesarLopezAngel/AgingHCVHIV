@@ -1,0 +1,17 @@
+#Figure1C
+library(ggplot2)
+library(ggpubr)
+library(grid)
+library(dplyr)
+cellCountAnnFeatures <- as.data.frame(read.csv(file = "CellCountAnnotatedFeatures.csv"))
+cellCountAnnFeatures$Feature <- factor(cellCountAnnFeatures$Feature, rev(c("CD8na_memRatio","CD4na_memRatio","CD8T.Naive", "CD4T.Naive", "CD8T.CM", "CD4T.CM", "CD8T.EM", "CD4T.EM", "CD8T.TEM")))
+plot1 <- ggplot(cellCountAnnFeatures, aes(x=Magnitude, y=Feature) ) +  geom_point(aes(color=Cohort), size =5) + xlim(-0.8, 0.8) + theme(legend.position="none") + labs(x = NULL, y = NULL, title = "T Cell Memory Inflation") + theme(plot.title = element_text(hjust = 0.5))
+
+baselineSignalingAnnFeatures <- as.data.frame(read.csv(file = "BaselineSignalingAnnotatedFeatures.csv"))
+plot2 <- ggplot(baselineSignalingAnnFeatures, aes(x=Magnitude, y=Feature) ) +  geom_point(aes(color=Cohort), size =5) + xlim(-0.8, 0.8) + theme(legend.position="none") + labs(x = NULL, y = NULL, title = "Elevated Baseline Signaling") + theme(plot.title = element_text(hjust = 0.5))
+
+cytokineSensitivityAnnFeatures <- as.data.frame(read.csv(file = "CytokineSensitivityAnnFeatures.csv"))
+plot3 <- ggplot(cytokineSensitivityAnnFeatures, aes(x=Magnitude, y=Feature) ) +  geom_point(aes(color=Cohort), size =5) + xlim(-0.8, 0.8) + theme(legend.position="none") + labs(x = NULL, y = NULL, title = "Diminished Cytokine Sensitivity") + theme(plot.title = element_text(hjust = 0.5))
+
+grid.newpage()
+grid.draw(rbind(ggplotGrob(plot1), ggplotGrob(plot2), ggplotGrob(plot3), size = "last"))
