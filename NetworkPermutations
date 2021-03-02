@@ -1,0 +1,209 @@
+#Load CorMatrix data
+setwd("~/Desktop/CorMatrices/")
+preData <- read.table(file="PreCorMatrix(1).csv", header = T, sep = ",", row.names = 1)
+midData <- read.table(file="MidCorMatrix(1).csv", header = T, sep = ",", row.names = 1)
+postData <- read.table(file="PostCorMatrix(1).csv", header = T, sep = ",", row.names = 1)
+
+#Define number of parameters
+nPre <- length(preData[1,])
+nMid <- length(midData[1,])
+nPost <- length(postData[1,])
+
+#Initialize matrices to store observed test statistics (means and medians) to compare with permuted values
+obsStatsPre <- matrix(0, nrow = nPre, ncol = 2)
+row.names(obsStatsPre) <- names(preData)
+colnames(obsStatsPre) <- c("MeanCor", "MedianCor")
+
+obsStatsMid <- matrix(0, nrow = nMid, ncol = 2)
+row.names(obsStatsMid) <- names(midData)
+colnames(obsStatsMid) <- c("MeanCor", "MedianCor")
+
+obsStatsPost <- matrix(0, nrow = nPost, ncol = 2)
+row.names(obsStatsPost) <- names(postData)
+colnames(obsStatsPost) <- c("MeanCor", "MedianCor")
+
+#Fill matrices with observed test statistics
+for(i in 1:nPre){
+    obsStatsPre[i,1] <- mean(preData[,i])
+    obsStatsPre[i,2] <- median(preData[,i])
+}
+
+for(i in 1:nMid){
+  obsStatsMid[i,1] <- mean(midData[,i])
+  obsStatsMid[i,2] <- median(midData[,i])
+}
+
+for(i in 1:nPost){
+  obsStatsPost[i,1] <- mean(postData[,i])
+  obsStatsPost[i,2] <- median(postData[,i])
+}
+
+#Permutation test
+#Set seed for reproducibility, set number of permutations, and defiine variable to sample
+set.seed(12345)
+P <- 10000
+preVariable <- names(preData)
+midVariable <- names(midData)
+postVariable <- names(postData)
+
+#Initialize matrices to store the permutation data
+prePermSamples <- matrix(0, nrow = nPre, ncol = P)
+midPermSamples <- matrix(0, nrow = nMid, ncol = P)
+postPermSamples <- matrix(0, nrow = nPost, ncol = P)
+
+#Fill matrices with permuted samples
+for(i in 1:P){
+  prePermSamples[,i] <- sample(preVariable, size= nPre, replace=FALSE)
+}
+
+for(i in 1:P){
+  midPermSamples[,i] <- sample(midVariable, size= nMid, replace=FALSE)
+}
+
+for(i in 1:P){
+  postPermSamples[,i] <- sample(postVariable, size= nPost, replace=FALSE)
+}
+
+#Initialize matrices to store test statistics (means and medians) from permutations
+permMeansPre <- matrix(0, nrow = P, ncol = nPre)
+row.names(permMeansPre) <- names(prePermSamples[,1:length(prePermSamples[,1])])
+colnames(permMeansPre) <- names(preData)
+
+permMediansPre <- matrix(0, nrow = P, ncol = nPre)
+row.names(permMediansPre) <- names(prePermSamples[,1:length(prePermSamples[,1])])
+colnames(permMediansPre) <- names(preData)
+
+permMeansMid <- matrix(0, nrow = P, ncol = nMid)
+row.names(permMeansMid) <- names(midPermSamples[,1:length(midPermSamples[,1])])
+colnames(permMeansMid) <- names(midData)
+
+permMediansMid <- matrix(0, nrow = P, ncol = nMid)
+row.names(permMediansMid) <- names(midPermSamples[,1:length(midPermSamples[,1])])
+colnames(permMediansMid) <- names(midData)
+
+permMeansPost <- matrix(0, nrow = P, ncol = nPost)
+row.names(permMeansPost) <- names(postPermSamples[,1:length(postPermSamples[,1])])
+colnames(permMeansPost) <- names(postData)
+
+permMediansPost <- matrix(0, nrow = P, ncol = nPost)
+row.names(permMediansPost) <- names(postPermSamples[,1:length(postPermSamples[,1])])
+colnames(permMediansPost) <- names(postData)
+
+#Calculate means and medians and fill matrices above
+for(i in 1:P){
+  for(j in 1:nPre){
+    permMeansPre[i,which(colnames(permMeansPre)==prePermSamples[j,i])] <- obsStatsPre[j,1]
+  }
+}
+
+for(i in 1:P){
+  for(j in 1:nPre){
+    permMediansPre[i,which(colnames(permMediansPre)==prePermSamples[j,i])] <- obsStatsPre[j,2]
+  }
+}
+
+for(i in 1:P){
+  for(j in 1:nMid){
+    permMeansMid[i,which(colnames(permMeansMid)==midPermSamples[j,i])] <- obsStatsMid[j,1]
+  }
+}
+
+for(i in 1:P){
+  for(j in 1:nMid){
+    permMediansMid[i,which(colnames(permMediansMid)==midPermSamples[j,i])] <- obsStatsMid[j,2]
+  }
+}
+
+for(i in 1:P){
+  for(j in 1:nPost){
+    permMeansPost[i,which(colnames(permMeansPost)==postPermSamples[j,i])] <- obsStatsPost[j,1]
+  }
+}
+
+for(i in 1:P){
+  for(j in 1:nPost){
+    permMediansPost[i,which(colnames(permMediansPost)==postPermSamples[j,i])] <- obsStatsPost[j,2]
+  }
+}
+
+#Initialize matrices to store observed deltas of means and medians
+obsDeltaPreMid <- matrix(0, nrow = nPre, ncol = 2)
+row.names(obsDeltaPreMid) <- names(preData)
+colnames(obsDeltaPreMid) <- c("DeltaMeanCor", "DeltaMedianCor")
+
+obsDeltaPrePost <- matrix(0, nrow = nPre, ncol = 2)
+row.names(obsDeltaPrePost) <- names(preData)
+colnames(obsDeltaPrePost) <- c("DeltaMeanCor", "DeltaMedianCor")
+
+obsDeltaMidPost <- matrix(0, nrow = nMid, ncol = 2)
+row.names(obsDeltaMidPost) <- names(midData)
+colnames(obsDeltaMidPost) <- c("DeltaMeanCor", "DeltaMedianCor")
+
+#Fill matrices with observed delta of test statistics
+for(i in 1:nPre){
+  obsDeltaPreMid[i,1] <- abs(obsStatsPre[i,1]-obsStatsMid[i,1])
+  obsDeltaPreMid[i,2] <- abs(obsStatsPre[i,2]-obsStatsMid[i,2])
+}
+
+for(i in 1:nPre){
+  obsDeltaPrePost[i,1] <- abs(obsStatsPre[i,1]-obsStatsPost[i,1])
+  obsDeltaPrePost[i,2] <- abs(obsStatsPre[i,2]-obsStatsPost[i,2])
+}
+
+for(i in 1:nMid){
+  obsDeltaMidPost[i,1] <- abs(obsStatsMid[i,1]-obsStatsPost[i,1])
+  obsDeltaMidPost[i,2] <- abs(obsStatsMid[i,2]-obsStatsPost[i,2])
+}
+
+#Initialize matrices to store deltas of means and medians in null networks
+nullDeltaMeansPreMid <- matrix(0, nrow = P, ncol = nPre)
+row.names(nullDeltaMeansPreMid) <- row.names(permMeansPre)
+colnames(nullDeltaMeansPreMid) <- colnames(permMeansPre)
+
+nullDeltaMediansPreMid <- matrix(0, nrow = P, ncol = nPre)
+row.names(nullDeltaMediansPreMid) <- row.names(permMediansPre)
+colnames(nullDeltaMediansPreMid) <- colnames(permMediansPre)
+
+nullDeltaMeansPrePost <- matrix(0, nrow = P, ncol = nPre)
+row.names(nullDeltaMeansPrePost) <- row.names(permMeansPre)
+colnames(nullDeltaMeansPrePost) <- colnames(permMeansPre)
+
+nullDeltaMediansPrePost <- matrix(0, nrow = P, ncol = nPre)
+row.names(nullDeltaMediansPrePost) <- row.names(permMediansPre)
+colnames(nullDeltaMediansPrePost) <- colnames(permMediansPre)
+
+nullDeltaMeansMidPost <- matrix(0, nrow = P, ncol = nMid)
+row.names(nullDeltaMeansMidPost) <- row.names(permMeansMid)
+colnames(nullDeltaMeansMidPost) <- colnames(permMeansMid)
+
+nullDeltaMediansMidPost <- matrix(0, nrow = P, ncol = nMid)
+row.names(nullDeltaMediansMidPost) <- row.names(permMediansMid)
+colnames(nullDeltaMediansMidPost) <- colnames(permMediansMid)
+
+#Fill matrices with delta of test statistics for null networks
+for(i in 1:P){
+  nullDeltaMeansPreMid[i,] <- abs(permMeansPre[i,]-permMeansMid[i,])
+  nullDeltaMediansPreMid[i,] <- abs(permMediansPre[i,]-permMediansMid[i,])
+  nullDeltaMeansPrePost[i,] <- abs(permMeansPre[i,]-permMeansPost[i,])
+  nullDeltaMediansPrePost[i,] <- abs(permMediansPre[i,]-permMediansPost[i,])
+  nullDeltaMeansMidPost[i,] <- abs(permMeansPost[i,]-permMeansMid[i,])
+  nullDeltaMediansMidPost[i,] <- abs(permMediansPost[i,]-permMediansMid[i,])
+}
+
+#Initialize matrix to store P values comparing obs stats to null networks
+
+networkPVs <- matrix(0, nrow = nPre, ncol = 6)
+row.names(networkPVs) <- colnames(preData)
+colnames(networkPVs) <- c("MeanPreMidPVs", "MeanPrePostPVs", "MeanMidPostPVs","MedianPreMidPVs", "MedianPrePostPVs", "MedianMidPostPVs")
+
+for(i in 1:nPre){
+  networkPVs[i,1] <- mean(nullDeltaMeansPreMid[,i] <= obsDeltaPreMid[i,1])
+  networkPVs[i,2] <- mean(nullDeltaMeansPrePost[,i] <= obsDeltaPrePost[i,1])
+  networkPVs[i,3] <- mean(nullDeltaMeansMidPost[,i] <= obsDeltaMidPost[i,1])
+  networkPVs[i,4] <- mean(nullDeltaMediansPreMid[,i] <= obsDeltaPreMid[i,2])
+  networkPVs[i,5] <- mean(nullDeltaMediansPrePost[,i] <= obsDeltaPrePost[i,2])
+  networkPVs[i,6] <- mean(nullDeltaMediansMidPost[,i] <= obsDeltaMidPost[i,2])  
+}
+
+#Write .csv file with pvalues for each node
+write.csv(networkPVs, file = "networkNodesPVsMeansMedians.csv")
