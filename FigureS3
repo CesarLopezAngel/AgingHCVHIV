@@ -1,0 +1,17 @@
+rawSignalingData <- read.csv('HCVUnstimSignalingRawData.csv', header = TRUE, row.names = 1)
+minusMid <- rawSignalingData[c(1:25,40:length(rawSignalingData[,1])),]
+scaledMinusMid <- apply(minusMid, MARGIN = 2, FUN = function(X) (X - min(X))/diff(range(X)))
+
+#FigureS3A and FigureS3C
+library(factoextra)
+library(cluster)
+library(NbClust)
+set.seed(123)
+gap_stat <- clusGap(scaledMinusMid, FUN = hcut, K.max = 10, B = 500) #Transpose scaledMinusMid with t(scaledMinusMid)to generate FigureS3C
+fviz_gap_stat(gap_stat)
+
+#FigureS3B and FigureS3D
+library(pvclust)
+result <- pvclust(scaledMinusMid, method.dist="euclidean", method.hclust="complete", nboot=10000) #Transpose scaledMinusMid with t(scaledMinusMid)to generate FigureS3D
+plot(result)
+pvrect(result, alpha = 0.75)
