@@ -1,0 +1,44 @@
+Feature,Functional Category,Cohort,Data Type,Magnitude,QV
+NKs.Baseline.pSTAT1,Elevated Baseline Signaling NKs,HCV,Baseline Signaling,0.420507911,0.126019417
+NKs.Baseline.pSTAT5,Elevated Baseline Signaling NKs,HCV,Baseline Signaling,0.46048504,0.100360825
+Monos.Baseline.pSTAT3,Elevated Baseline Signaling in Monos,Aging,Baseline Signaling,0.213,0.13
+Monos.Baseline.IkBa,Elevated Baseline Signaling in Monos,HCV,Baseline Signaling,-0.78834199,0.008428571
+Monos.Baseline.pAkt,Elevated Baseline Signaling in Monos,HCV,Baseline Signaling,0.39288401,0.196666667
+Monos.Baseline.pS6,Elevated Baseline Signaling in Monos,HCV,Baseline Signaling,0.39725436,0.196666667
+Monos.Baseline.pSTAT1,Elevated Baseline Signaling in Monos,HCV,Baseline Signaling,0.530238117,0.035757576
+Monos.Baseline.pSTAT5,Elevated Baseline Signaling in Monos,HCV,Baseline Signaling,0.656246286,0.006860465
+Monos.Baseline.pSTAT5,Elevated Baseline Signaling in Monos,HIV,Baseline Signaling,0.526882252,0.128
+gdT.Baseline.IkBa,Elevated Baseline Signaling in gdT,HCV,Baseline Signaling,-0.54373578,0.039044118
+gdT.Baseline.pSTAT1,Elevated Baseline Signaling in gdT,HCV,Baseline Signaling,0.677803239,0.008428571
+gdT.Baseline.pSTAT5,Elevated Baseline Signaling in gdT,HCV,Baseline Signaling,0.567542724,0.041549296
+DCs.Baseline.IkBa,Elevated Baseline Signaling in DCs,HCV,Baseline Signaling,-0.488274281,0.070543478
+DCs.Baseline.pAkt,Elevated Baseline Signaling in DCs,HCV,Baseline Signaling,0.533263627,0.063693182
+DCs.Baseline.pSTAT1,Elevated Baseline Signaling in DCs,HCV,Baseline Signaling,0.495635625,0.043266667
+DCs.Baseline.pSTAT3,Elevated Baseline Signaling in DCs,HCV,Baseline Signaling,0.66068446,0.011568627
+DCs.Baseline.pSTAT5,Elevated Baseline Signaling in DCs,HCV,Baseline Signaling,0.724895967,0.006860465
+CD8T.Baseline.pSTAT1,Elevated Baseline Signaling in CD8T,Aging,Baseline Signaling,0.572,0.008
+CD8T.Baseline.pAkt,Elevated Baseline Signaling in CD8T,HCV,Baseline Signaling,0.487837363,0.095260417
+CD8T.Baseline.pS6,Elevated Baseline Signaling in CD8T,HCV,Baseline Signaling,0.420748023,0.132614679
+CD8T.Baseline.pSTAT1,Elevated Baseline Signaling in CD8T,HCV,Baseline Signaling,0.651650735,0.008428571
+CD8T.Baseline.pSTAT3,Elevated Baseline Signaling in CD8T,HCV,Baseline Signaling,0.665973644,0.008428571
+CD8T.Baseline.pSTAT5,Elevated Baseline Signaling in CD8T,HCV,Baseline Signaling,0.700967727,0.006860465
+CD8T.Baseline.pSTAT1,Elevated Baseline Signaling in CD8T,HIV,Baseline Signaling,0.513366389,0.109714286
+CD8T.Baseline.pSTAT5,Elevated Baseline Signaling in CD8T,HIV,Baseline Signaling,0.425133057,0.1995392
+CD4T.Baseline.pSTAT1,Elevated Baseline Signaling in CD4T,Aging,Baseline Signaling,0.327,0.016
+CD4T.Baseline.pSTAT5,Elevated Baseline Signaling in CD4T,Aging,Baseline Signaling,0.25,0.068
+CD4T.Baseline.pAkt,Elevated Baseline Signaling in CD4T,HCV,Baseline Signaling,0.548702246,0.059702381
+CD4T.Baseline.pCreb,Elevated Baseline Signaling in CD4T,HCV,Baseline Signaling,0.531347449,0.039044118
+CD4T.Baseline.pS6,Elevated Baseline Signaling in CD4T,HCV,Baseline Signaling,0.504432621,0.063693182
+CD4T.Baseline.pSTAT1,Elevated Baseline Signaling in CD4T,HCV,Baseline Signaling,0.734508818,0.008428571
+CD4T.Baseline.pSTAT3,Elevated Baseline Signaling in CD4T,HCV,Baseline Signaling,0.705275029,0.008428571
+CD4T.Baseline.pSTAT4,Elevated Baseline Signaling in CD4T,HCV,Baseline Signaling,0.441063076,0.127644231
+CD4T.Baseline.pSTAT5,Elevated Baseline Signaling in CD4T,HCV,Baseline Signaling,0.745343475,0.008428571
+CD4T.Baseline.pSTAT5,Elevated Baseline Signaling in CD4T,HIV,Baseline Signaling,0.484476329,0.188631579
+CD4T.Baseline.pSTAT1,Elevated Baseline Signaling in CD4T,HIV,Baseline Signaling,0.455432009,0.197818182
+BCells.Baseline.pSTAT3,Elevated Baseline Signaling in B Cells,Aging,Baseline Signaling,0.239,0.077
+BCells.Baseline.pAkt,Elevated Baseline Signaling in B Cells,HCV,Baseline Signaling,0.461946116,0.118578431
+BCells.Baseline.pSTAT1,Elevated Baseline Signaling in B Cells,HCV,Baseline Signaling,0.735274955,0.008428571
+BCells.Baseline.pSTAT3,Elevated Baseline Signaling in B Cells,HCV,Baseline Signaling,0.417626286,0.182743363
+BCells.Baseline.pSTAT5,Elevated Baseline Signaling in B Cells,HCV,Baseline Signaling,0.669630678,0.011568627
+BCells.Baseline.pSTAT5,Elevated Baseline Signaling in B Cells,HIV,Baseline Signaling,0.431654922,0.184888889
+BCells.Baseline.pSTAT3,Elevated Baseline Signaling in B Cells,HIV,Baseline Signaling,0.410708822,0.187733333

@@ -1,0 +1,100 @@
+Feature,Functional Category,Cohort,Data Type,Magnitude,QV
+NK.IFNg.pSTAT4,Diminished Sensitivity to Cytokine in NKs,HCV,Cytokine Sensitivity,-0.727553183,0.006860465
+NK.IFNg.pP38,Diminished Sensitivity to Cytokine in NKs,HCV,Cytokine Sensitivity,-0.85387622,0.008428571
+NK.IFNg.pIRF7,Diminished Sensitivity to Cytokine in NKs,HCV,Cytokine Sensitivity,-0.387414614,0.196666667
+NK.IFNg.pERK1.2,Diminished Sensitivity to Cytokine in NKs,HCV,Cytokine Sensitivity,-0.63326434,0.015258621
+NK.IFNg.pAkt,Diminished Sensitivity to Cytokine in NKs,HCV,Cytokine Sensitivity,-0.618380426,0.008428571
+NK.IFNa.pERK1.2,Diminished Sensitivity to Cytokine in NKs,HCV,Cytokine Sensitivity,-0.384902382,0.159459459
+Monos.IL6.STAT3,Diminished Sensitivity to Cytokine in Monos,Aging,Cytokine Sensitivity,-0.307,0.016
+Monos.IL2.STAT3,Diminished Sensitivity to Cytokine in Monos,Aging,Cytokine Sensitivity,-0.195,0.184
+Monos.IL10.STAT3,Diminished Sensitivity to Cytokine in Monos,Aging,Cytokine Sensitivity,-0.264,0.064
+Monos.IFNg.STAT3,Diminished Sensitivity to Cytokine in Monos,Aging,Cytokine Sensitivity,-0.321,0.007
+Monos.IFNg.pP38,Diminished Sensitivity to Cytokine in Monos,HCV,Cytokine Sensitivity,-0.729145177,0.008428571
+Monos.IFNg.pMAPKAPK2,Diminished Sensitivity to Cytokine in Monos,HCV,Cytokine Sensitivity,-0.586508516,0.015258621
+Monos.IFNg.pIRF7,Diminished Sensitivity to Cytokine in Monos,HCV,Cytokine Sensitivity,-0.55756845,0.0479375
+Monos.IFNg.pERK1.2,Diminished Sensitivity to Cytokine in Monos,HCV,Cytokine Sensitivity,-0.524317032,0.045974026
+Monos.IFNg.pCreb,Diminished Sensitivity to Cytokine in Monos,HCV,Cytokine Sensitivity,-0.69674108,0.008428571
+Monos.IFNg.pAkt,Diminished Sensitivity to Cytokine in Monos,HCV,Cytokine Sensitivity,-0.6987968,0.008428571
+Monos.IFNa.STAT5,Diminished Sensitivity to Cytokine in Monos,HIV,Cytokine Sensitivity,-0.476580069,0.192
+Monos.IFNa.STAT3,Diminished Sensitivity to Cytokine in Monos,Aging,Cytokine Sensitivity,-0.276,0.038
+Monos.IFNa.STAT3,Diminished Sensitivity to Cytokine in Monos,HIV,Cytokine Sensitivity,-0.511232381,0.187733333
+gdT.IFNg.pSTAT4,Diminished Sensitivity to Cytokine in gdT,HCV,Cytokine Sensitivity,-0.824602561,0.008428571
+gdT.IFNg.pSTAT3,Diminished Sensitivity to Cytokine in gdT,HCV,Cytokine Sensitivity,-0.626700022,0.015258621
+gdT.IFNg.pP38,Diminished Sensitivity to Cytokine in gdT,HCV,Cytokine Sensitivity,-0.942774437,0.008428571
+gdT.IFNg.pERK1.2,Diminished Sensitivity to Cytokine in gdT,HCV,Cytokine Sensitivity,-0.876633571,0.008428571
+gdT.IFNa.pERK1.2,Diminished Sensitivity to Cytokine in gdT,HCV,Cytokine Sensitivity,-0.401022104,0.132614679
+DCs.IFNg.pSTAT5,Diminished Sensitivity to Cytokine in DCs,HCV,Cytokine Sensitivity,-0.615482987,0.015258621
+DCs.IFNg.pSTAT4,Diminished Sensitivity to Cytokine in DCs,HCV,Cytokine Sensitivity,-0.671384375,0.006860465
+DCs.IFNg.pSTAT3,Diminished Sensitivity to Cytokinein DCs,HCV,Cytokine Sensitivity,-0.436656833,0.132336449
+DCs.IFNg.pSTAT1,Diminished Sensitivity to Cytokine in DCs,HCV,Cytokine Sensitivity,-0.650792435,0.019344262
+DCs.IFNg.pP38,Diminished Sensitivity to Cytokine in DCs,HCV,Cytokine Sensitivity,-0.733316257,0.008428571
+DCs.IFNg.pMAPKAPK2,Diminished Sensitivity to Cytokine in DCs,HCV,Cytokine Sensitivity,-0.454317302,0.111377551
+DCs.IFNg.pIRF7,Diminished Sensitivity to Cytokine in DCs,HCV,Cytokine Sensitivity,-0.499545026,0.063693182
+DCs.IFNg.pERK1.2,Diminished Sensitivity to Cytokine in DCs,HCV,Cytokine Sensitivity,-0.59068639,0.015258621
+DCs.IFNg.pCreb,Diminished Sensitivity to Cytokine in DCs,HCV,Cytokine Sensitivity,-0.528775241,0.041549296
+DCs.IFNg.pAkt,Diminished Sensitivity to Cytokine in DCs,HCV,Cytokine Sensitivity,-0.893625707,0.008428571
+DCs.IFNa.pP38,Diminished Sensitivity to Cytokine in DCs,HCV,Cytokine Sensitivity,-0.494367224,0.059702381
+DCs.IFNa.pIRF7,Diminished Sensitivity to Cytokine in DCs,HCV,Cytokine Sensitivity,-0.442314456,0.130801887
+DCs.IFNa.pAkt,Diminished Sensitivity to Cytokine in DCs,HCV,Cytokine Sensitivity,-0.637104782,0.011568627
+CD8T.IL7.STAT5,Diminished Sensitivity to Cytokine in CD8T,HIV,Cytokine Sensitivity,-0.428638647,0.187733333
+CD8T.IL7.STAT1,Diminished Sensitivity to Cytokine in CD8T,Aging,Cytokine Sensitivity,-0.409,0.008
+CD8T.IL6.STAT5,Diminished Sensitivity to Cytokine in CD8T,Aging,Cytokine Sensitivity,-0.625,0.008
+CD8T.IL6.STAT3,Diminished Sensitivity to Cytokine in CD8T,Aging,Cytokine Sensitivity,-0.407,0.008
+CD8T.IL6.STAT3,Diminished Sensitivity to Cytokine in CD8T,HIV,Cytokine Sensitivity,-0.478512918,0.1992517
+CD8T.IL6.STAT1,Diminished Sensitivity to Cytokine in CD8T,Aging,Cytokine Sensitivity,-0.599,0.008
+CD8T.IL21.STAT5,Diminished Sensitivity to Cytokine in CD8T,Aging,Cytokine Sensitivity,-0.266,0.064
+CD8T.IL21.STAT1,Diminished Sensitivity to Cytokine in CD8T,Aging,Cytokine Sensitivity,-0.441,0.008
+CD8T.IFNg.STAT5,Diminished Sensitivity to Cytokine in CD8T,Aging,Cytokine Sensitivity,-0.217,0.123
+CD8T.IFNg.STAT1,Diminished Sensitivity to Cytokine in CD8T,Aging,Cytokine Sensitivity,-0.643,0.008
+CD8T.IFNg.pSTAT4,Diminished Sensitivity to Cytokine in CD8T,HCV,Cytokine Sensitivity,-0.777649462,0.008428571
+CD8T.IFNg.pSTAT3,Diminished Sensitivity to Cytokine in CD8T,HCV,Cytokine Sensitivity,-0.760419969,0.008428571
+CD8T.IFNg.pP38,Diminished Sensitivity to Cytokine in CD8T,HCV,Cytokine Sensitivity,-0.879420671,0.008428571
+CD8T.IFNg.pIRF7,Diminished Sensitivity to Cytokine in CD8T,HCV,Cytokine Sensitivity,-0.41867926,0.182743363
+CD8T.IFNg.pERK1.2,Diminished Sensitivity to Cytokine in CD8T,HCV,Cytokine Sensitivity,-0.663049884,0.011568627
+CD8T.IFNg.pAkt,Diminished Sensitivity to Cytokine in CD8T,HCV,Cytokine Sensitivity,-0.54580648,0.043266667
+CD8T.IFNa.STAT5,Diminished Sensitivity to Cytokine in CD8T,Aging,Cytokine Sensitivity,-0.452,0.008
+CD8T.IFNa.STAT3,Diminished Sensitivity to Cytokine in CD8T,Aging,Cytokine Sensitivity,-0.207,0.15
+CD8T.IFNa.STAT3,Diminished Sensitivity to Cytokine in CD8T,HIV,Cytokine Sensitivity,-0.551168683,0.1792
+CD8T.IFNa.STAT1,Diminished Sensitivity to Cytokine in CD8T,Aging,Cytokine Sensitivity,-0.508,0.008
+CD8T.IFNa.pP38,Diminished Sensitivity to Cytokine in CD8T,HCV,Cytokine Sensitivity,-0.692440649,0.008428571
+CD8T.IFNa.pERK1.2,Diminished Sensitivity to Cytokine in CD8T,HCV,Cytokine Sensitivity,-0.481453155,0.011568627
+CD8T.IFNa.pAkt,Diminished Sensitivity to Cytokine in CD8T,HCV,Cytokine Sensitivity,-0.484876545,0.072956989
+CD4T.IL6.STAT5,Diminished Sensitivity to Cytokine in CD4T,Aging,Cytokine Sensitivity,-0.507,0.008
+CD4T.IL6.STAT5,Diminished Sensitivity to Cytokine in CD4T,HIV,Cytokine Sensitivity,-0.653346705,0.170666667
+CD4T.IL6.STAT1,Diminished Sensitivity to Cytokine in CD4T,Aging,Cytokine Sensitivity,-0.267,0.042
+CD4T.IL21.STAT5,Diminished Sensitivity to Cytokine in CD4T,Aging,Cytokine Sensitivity,-0.235,0.109
+CD4T.IL21.STAT1,Diminished Sensitivity to Cytokine in CD4T,Aging,Cytokine Sensitivity,-0.296,0.04
+CD4T.IFNg.pSTAT5,Diminished Sensitivity to Cytokine in CD4T,HCV,Cytokine Sensitivity,-0.589368485,0.027230769
+CD4T.IFNg.pSTAT4,Diminished Sensitivity to Cytokine in CD4T,HCV,Cytokine Sensitivity,-0.77284012,0.008428571
+CD4T.IFNg.pSTAT3,Diminished Sensitivity to Cytokine in CD4T,HCV,Cytokine Sensitivity,-0.724291928,0.006860465
+CD4T.IFNg.pP38,Diminished Sensitivity to Cytokine in CD4T,HCV,Cytokine Sensitivity,-0.838345178,0.008428571
+CD4T.IFNg.pIRF7,Diminished Sensitivity to Cytokine in CD4T,HCV,Cytokine Sensitivity,-0.460652684,0.116831683
+CD4T.IFNg.pERK1.2,Diminished Sensitivity to Cytokine in CD4T,HCV,Cytokine Sensitivity,-0.635705677,0.006860465
+CD4T.IFNg.pAkt,Diminished Sensitivity to Cytokine in CD4T,HCV,Cytokine Sensitivity,-0.498330248,0.0479375
+CD4T.IFNa.STAT5,Diminished Sensitivity to Cytokine in CD4T,Aging,Cytokine Sensitivity,-0.246,0.063
+CD4T.IFNa.STAT5,Diminished Sensitivity to Cytokine in CD4T,HIV,Cytokine Sensitivity,-0.404912839,0.19991284
+CD4T.IFNa.STAT1,Diminished Sensitivity to Cytokine in CD4T,Aging,Cytokine Sensitivity,-0.207,0.164
+CD4T.IFNa.STAT1,Diminished Sensitivity to Cytokine in CD4T,HIV,Cytokine Sensitivity,-0.516811268,0.1993472
+CD4T.IFNa.pP38,Diminished Sensitivity to Cytokine in CD4T,HCV,Cytokine Sensitivity,-0.742611915,0.008428571
+CD4T.IFNa.pERK1.2,Diminished Sensitivity to Cytokine in CD4T,HCV,Cytokine Sensitivity,-0.454951531,0.019344262
+CD4T.IFNa.pAkt,Diminished Sensitivity to Cytokine in CD4T,HCV,Cytokine Sensitivity,-0.497453915,0.065555556
+BCells.IL7.STAT3,Diminished Sensitivity to Cytokine in B Cells,Aging,Cytokine Sensitivity,-0.23,0.086
+BCells.IL6.STAT3,Diminished Sensitivity to Cytokine in B Cells,Aging,Cytokine Sensitivity,-0.305,0.02
+BCells.IL6.STAT1,Diminished Sensitivity to Cytokine in B Cells,Aging,Cytokine Sensitivity,-0.244,0.082
+BCells.IFNg.STAT3,Diminished Sensitivity to Cytokine in B Cells,Aging,Cytokine Sensitivity,-0.226,0.088
+BCells.IFNg.pSTAT5,Diminished Sensitivity to Cytokine in B Cells,HCV,Cytokine Sensitivity,-0.728270941,0.008428571
+BCells.IFNg.pSTAT4,Diminished Sensitivity to Cytokine in B Cells,HCV,Cytokine Sensitivity,-0.864162998,0.008428571
+BCells.IFNg.pSTAT3,Diminished Sensitivity to Cytokine in B Cells,HCV,Cytokine Sensitivity,-0.632572009,0.015258621
+BCells.IFNg.pSTAT1,Diminished Sensitivity to Cytokine in B Cells,HCV,Cytokine Sensitivity,-0.50783232,0.068076923
+BCells.IFNg.pP38,Diminished Sensitivity to Cytokine in B Cells,HCV,Cytokine Sensitivity,-0.878564815,0.008428571
+BCells.IFNg.pMAPKAPK2,Diminished Sensitivity to Cytokine in B Cells,HCV,Cytokine Sensitivity,-0.403847631,0.196666667
+BCells.IFNg.pIRF7,Diminished Sensitivity to Cytokine in B Cells,HCV,Cytokine Sensitivity,-0.515144492,0.062470588
+BCells.IFNg.pERK1.2,Diminished Sensitivity to Cytokine in B Cells,HCV,Cytokine Sensitivity,-0.599117256,0.011568627
+BCells.IFNg.pCreb,Diminished Sensitivity to Cytokine in B Cells,HCV,Cytokine Sensitivity,-0.482169565,0.075319149
+BCells.IFNg.pAkt,Diminished Sensitivity to Cytokine in B Cells,HCV,Cytokine Sensitivity,-0.658704249,0.008428571
+BCells.IFNa.STAT3,Diminished Sensitivity to Cytokine in B Cells,Aging,Cytokine Sensitivity,-0.301,0.012
+BCells.IFNa.STAT3,Diminished Sensitivity to Cytokine in B Cells,HIV,Cytokine Sensitivity,-0.412547891,0.1993472
+BCells.IFNa.pSTAT4,Diminished Sensitivity to Cytokine in B Cells,HCV,Cytokine Sensitivity,-0.54820942,0.057560976
+BCells.IFNa.pP38,Diminished Sensitivity to Cytokine in B Cells,HCV,Cytokine Sensitivity,-0.779907136,0.008428571
+BCells.IFNa.pERK1.2,Diminished Sensitivity to Cytokine in B Cells,HCV,Cytokine Sensitivity,-0.477568794,0.015258621
+BCells.IFNa.pAkt,Diminished Sensitivity to Cytokine in B Cells,HCV,Cytokine Sensitivity,-0.579386914,0.027230769
